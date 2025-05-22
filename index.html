@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Siswa</title>
+  <link rel="stylesheet" href="/dist/styles.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<section id="home"></section>
+
+<body class="font-mono bg-gradient-to-l from-blue-900 to-gray-900 transition-colors duration-500">
+  <nav
+    class="animate-[fadeDown_1s_ease-out] sticky top-0 z-50 w-full dark:bg-gray-950 shadow-md border-b border-blue-500">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16 relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 sm:left-0 sm:transform-none md:left-20 xl:left-35">
+          <span
+            class="text-xl font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Portofolio</span>
+        </div>
+
+        <button id="menu-btn"
+          class="text-white lg:hidden focus:outline-none cursor-pointer bg-gray-900 rounded-md px-2 py-2 shadow-md flex items-center hover:bg-gray-800">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+        <div class="max-w-screen-xl mx-auto w-full lg:w-auto">
+          <ul id="menu"
+            class="animate-menu lg:flex space-x-6 hidden flex-col lg:flex-row lg:items-center absolute lg:static top-16 left-0 w-full lg:w-auto bg-gray-900 lg:bg-transparent px-4 py-4 lg:p-0">
+            <li>
+              <a href="#home"
+                class="relative inline-block text-white nav-link after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-blue-600 after:transform after:-translate-x-1/2 after:transition-all after:duration-400 hover:after:w-full">Tentang
+                Saya</a>
+            </li>
+            <li>
+              <a href="#skills"
+                class="relative inline-block text-white nav-link after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-blue-600 after:transform after:-translate-x-1/2 after:transition-all after:duration-400 hover:after:w-full">Keahlian</a>
+            </li>
+            <li>
+              <a href="#project"
+                class="relative inline-block text-white nav-link after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-blue-600 after:transform after:-translate-x-1/2 after:transition-all after:duration-400 hover:after:w-full">Proyek</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="relative inline-block text-white nav-link after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-0 after:h-[2px] after:bg-blue-600 after:transform after:-translate-x-1/2 after:transition-all after:duration-400 hover:after:w-full">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="py-20 min-h-screen" id="home">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-20 justify-center ">
+      <div class="animate-[slideInLeft_0.5s_ease-out_forwards] mt-10">
+        <div
+          class="bg-gradient-to-r from-gray-950 to-blue-600 px-2 py-2 inline-block rounded-3xl font-bold text-white mb-3">
+          Web Development &middot; Design</div>
+        <p class="text-md text-gray-400 mb-2">-Perkenalan</p>
+        <h1 class="text-xl text-white mb-1">Halo, Saya</h1>
+        <h1><span class="typewriter text-white text-3xl font-bold inline-block mb-2">Muhammad Rafi Ba'adillah</span>
+        </h1>
+        <h1 class="text-xl text-white mb-1">Siswa dari <span
+            class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent font-bold">SMKN 4 Tangerang
+            | RPL</span></h1>
+        <p class="max-w-md break-words text-xl text-white mb-2">Saya seorang Pengembang Web Front-End & Desainer UI/UX
+          yang membuat situs web responsif dan ramah pengguna menggunakan HTML, CSS, JavaScript, dan alat desain modern
+          seperti Figma dan Tailwind CSS serta Backend dasar.</p>
+        <div class="bg-black hover:bg-gray-800 inline-block px-2 py-2 rounded-md">
+          <div>
+            <a href="asset/CV_Muhammad_Rafi_Baadillah.pdf.pdf" download="CV_Muhammad_Rafi_Baadillah.pdf" target="_blank" class="text-white text-md gap-2 flex items-center"><i data-lucide="download"
+                class="w-5 h-5 text-white"></i>Unduh CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="animate-[fadeRightToLeft_1s_ease-out] flex justify-center items-center">
+        <div class="bg-gradient-to-br from-gray-950 to-blue-700 rounded-4xl shadow-lg">
+          <img src="img/rafi.png" class="w-105 h-105 object-contain" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-25 min-h-screen" id="skills">
+    <div class="text-center mb-10">
+      <span class="text-3xl font-bold text-white mb-3">Keahlian Saya</span>
+      <p class="text-xl text-white">Teknologi dan alat yang saya gunakan</p>
+    </div>
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-10 justify-center">
+      <div class="dark:bg-gray-950 px-4 py-2 rounded-2xl shadow-xl max-w-xl w-full" data-aos="fade-up"
+        data-aos-duration="800">
+        <div class="mb-8 mt-3">
+          <div class="flex items-center mb-6 justify-center" data-aos="fade-up" data-aos-duration="800">
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-400 rounded-xl flex items-center justify-center text-white text-xl">
+              <i data-lucide="laptop" class="w-6 h-6 text-white"></i>
+            </div>
+            <h2
+              class="ml-3 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+              Web Development</h2>
+          </div>
+          <div class="flex flex-wrap gap-4 mb-4 justify-center" data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="800">
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/color/48/html-5--v1.png" class="w-8 h-8" alt="html-5--v1" />Html</div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/color/48/css3.png" class="w-8 h-8" alt="css3" />Css</div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/color/48/javascript--v1.png" class="w-8 h-8"
+                alt="javascript--v1" />JavaScript</div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/color/48/bootstrap--v2.png" class="w-8 h-8" alt="bootstrap--v2" />Bootstrap
+            </div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/fluency/48/tailwind_css.png" class="w-8 h-8" alt="tailwind_css" />Tailwind
+            </div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-hypertext-preprocessor-a-widely-used-open-source-general-purpose-scripting-language-logo-color-tal-revivo.png"
+                class="w-8 h-8"
+                alt="external-hypertext-preprocessor-a-widely-used-open-source-general-purpose-scripting-language-logo-color-tal-revivo" />PHP
+            </div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/nolan/64/laravel.png" class="w-8 h-8" alt="laravel" />Laravel</div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/ios-glyphs/30/github.png" class="w-8 h-8" alt="github" />Git</div>
+          </div>
+        </div>
+      </div>
+      <div class="dark:bg-gray-950 px-4 py-2 rounded-2xl shadow-xl max-w-xl w-full h-81" data-aos="fade-up"
+        data-aos-duration="800">
+        <div class="mb-8 mt-3">
+          <div class="flex items-center mb-6 justify-center" data-aos="fade-up" data-aos-duration="800">
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-400 rounded-xl flex items-center justify-center text-white text-xl">
+              <i data-lucide="palette" class="w-6 h-6 text-white"></i>
+            </div>
+            <h2
+              class="ml-3 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">
+              Design</h2>
+          </div>
+          <div class="flex flex-wrap gap-4 mb-4 justify-center" data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="800">
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/fluency/48/canva.png" class="w-8 h-8" alt="canva" />Canva</div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1"><img
+                src="https://img.icons8.com/plasticine/100/pixellab.png" class="w-10 h-10" alt="pixellab" />PixelLab
+            </div>
+            <div class="bg-gray-900 px-4 py-3 rounded-xl text-white flex items-center gap-1">
+              <div class="bg-gray-800 rounded-xl flex items-center justify-center max-w-xl px-1 py-1"><img
+                  src="https://img.icons8.com/color/48/figma--v1.png" class="w-5 h-5" alt="figma--v1" /></i></div>
+              UI/UX Design
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="py-25 min-h-screen" id="project">
+    <div class="max-w-6xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-white mb-2 sm:text-4xl">Dokumentasi Proyek</h2>
+      <p class="text-xl text-white mb-10 sm:text-2xl">
+        Dokumentasi berupa foto-foto hasil akhir dari berbagai proyek yang telah saya kerjakan.
+      </p>
+
+
+      <div class="bg-gray-800 px-4 rounded-2xl shadow-xl max-w-7xl w-full py-16 mt-10">
+        <div class="flex flex-wrap gap-2 text-sm font-medium text-white mb-10 justify-center">
+          <div
+            class="bg-[rgba(255,255,255,0.3)] px-2 py-2 border-1 border-blue-600 rounded-full inline-flex flex-wrap justify-center gap-2">
+            <button class="filter-btn text-blue-500 hover:text-blue-500 px-4 py-1 rounded-full"
+              data-category="all">ALL</button>
+            <button class="filter-btn hover:text-blue-500 px-4 py-1 rounded-full" data-category="appweb">APPWEB</button>
+            <button class="filter-btn hover:text-blue-500 px-4 py-1 rounded-full" data-category="uiux">UI/UX
+              DESIGNER</button>
+            <button class="filter-btn hover:text-blue-500 px-4 py-1 rounded-full"
+              data-category="personal">PERSONALPROJECT</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="project-grid">
+
+          <div class="project-card opacity-100 scale-100 transition-smooth" data-category="uiux">
+            <div class="bg-blue-700  shadow-md overflow-hidden hover:shadow-lg transition h-68">
+              <div
+                class="overflow-hidden  cursor-pointer transition duration-300 transform hover:scale-105 active:scale-110">
+                <img src="img/Screenshot 2025-05-13 122716.png" alt="" class="w-full h-48 object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg text-white">Desain Antarmuka Ramah Pengguna</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card opacity-100 scale-100 transition-smooth" data-category="personal">
+            <div class="bg-blue-700  shadow-md overflow-hidden hover:shadow-lg transition h-68">
+              <div
+                class="overflow-hidden  cursor-pointer transition duration-300 transform hover:scale-105 active:scale-110">
+                <img src="img/Screenshot 2025-05-21 194156.png" alt="CRUD" class="w-full h-48 object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg text-white">Sistem CRUD Data Siswa</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card opacity-100 scale-100 transition-smooth" data-category="appweb">
+            <div class="bg-blue-700  shadow-md overflow-hidden hover:shadow-lg transition h-68">
+              <div
+                class="overflow-hidden  cursor-pointer transition duration-300 transform hover:scale-105 active:scale-110">
+                <img src="img/Screenshot 2025-05-21 144738.png" alt="Landing Page" class="w-full h-48 object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg text-white">Manajemen Produk dan Kategori</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card opacity-100 scale-100 transition-smooth" data-category="appweb">
+            <div class="bg-blue-700  shadow-md overflow-hidden hover:shadow-lg transition h-68">
+              <div
+                class="overflow-hidden  cursor-pointer transition duration-300 transform hover:scale-105 active:scale-110">
+                <img src="img/Screenshot 2025-05-21 193659.png" alt="Landing Page" class="w-full h-48 object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg text-white">Sistem Manajemen Perpustakaan Digital</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card opacity-100 scale-100 transition-smooth" data-category="personal">
+            <div class="bg-blue-700  shadow-md overflow-hidden hover:shadow-lg transition h-68">
+              <div
+                class="overflow-hidden  cursor-pointer transition duration-300 transform hover:scale-105 active:scale-110">
+                <img src="img/Screenshot 2025-05-21 200150.png" alt="Landing Page" class="w-full h-48 object-cover">
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg text-white">Sertifikat Pelatihan Generative AI</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="zoom-modal" class="fixed inset-0 flex items-center justify-center z-50">
+          <img id="zoomed-image" src="" alt="Zoomed Project"
+            class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg cursor-zoom-out" />
+        </div>
+        <div class="flex justify-center mt-15">
+            <div class="max-w-6xl mx-auto">
+              <h2 class="text-3xl font-bold text-white mb-10 text-center ">Penjelasan Proyek yang dibuat</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Desain Antarmuka Ramah Pengguna</h3>
+                <p class="text-gray-600">
+                  Tampilan yang bersih dan terstruktur memudahkan pengguna untuk memahami fitur aplikasi dengan cepat
+                  dan
+                  tanpa kebingungan
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sistem CRUD Data Siswa</h3>
+                <p class="text-gray-600">
+                  Sistem ini memungkinkan pengelolaan data siswa (Create, Read, Update, Delete) secara mudah. Setiap
+                  entri
+                  mencakup nama, jenis kelamin, kelas, tanggal lahir, foto, serta fitur untuk mengedit atau menghapus
+                  data
+                  siswa.
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Manajemen Produk dan Kategori</h3>
+                <p class="text-gray-600">
+                  Aplikasi berbasis Laravel ini memungkinkan pengguna untuk menambahkan, menampilkan, mengubah, dan
+                  menghapus data produk maupun kategori dengan mudah melalui dashboard yang interaktif.
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sistem Manajemen Perpustakaan Digital</h3>
+                <p class="text-gray-600">
+                  Aplikasi bernama arsipin dirancang untuk memudahkan proses pengarsipan buku dan manajemen peminjaman.
+                  Fitur utama meliputi:
+                  Pengkategorian buku berdasarkan genre, penulis, dll.
+                  Sistem permintaan dan persetujuan peminjaman.
+                  Riwayat peminjaman lengkap untuk pemantauan aktivitas pengguna.
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sertifikat Pelatihan Generative AI</h3>
+                <p class="text-gray-600">
+                  Sertifikat ini diberikan sebagai bukti penyelesaian pelatihan Generative AI for Students yang
+                  diselenggarakan oleh Microsoft. Pelatihan ini dirancang untuk membekali siswa dengan pengetahuan dasar
+                  dan
+                  keterampilan dalam pemanfaatan kecerdasan buatan generatif untuk mendukung pembelajaran dan inovasi di
+                  era
+                  digital.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <section id="contact" class="py-25 min-h-screen">
+    <div class="text-center mb-8 md:mb-12">
+      <span class="text-3xl md:text-4xl text-white  font-bold mb-2 md:mb-3">Kontak Saya</span>
+      <p class="text-lg md:text-xl text-gray-700"></p>
+    </div>
+    <div class="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row justify-center gap-8 md:gap-10">
+      <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+        <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Informasi Kontak</h2>
+        <div class="flex items-center space-x-3 mb-3">
+          <i data-lucide="mail" class="w-5 h-5 text-gray-700"></i>
+          <div>
+            <p class="text-sm font-bold text-gray-700">Email</p>
+            <p class="text-md text-gray-600">mrafibaadillah@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3 mb-3">
+          <i data-lucide="phone" class="w-5 h-5 text-gray-700"></i>
+          <div>
+            <p class="text-sm font-bold text-gray-700">No. Telp</p>
+            <p class="text-md text-gray-600">+62-838-2902-2240</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-3 mb-3">
+          <i data-lucide="map-pin" class="w-8 h-8 text-gray-700 mt-0.5"></i>
+          <div>
+            <p class="text-sm font-bold text-gray-700">Alamat</p>
+            <p class="text-md text-gray-600">Jl Nangka v. Pakulonan Kec.Serpong Utara Kota Tangerang Selatan</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+        <form action="https://formsubmit.co/mrafibaadillah@gmail.com" method="POST" id="contactForm">
+          <h2
+            class="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-gray-950 text-center mb-4">
+            Hubungi Saya
+          </h2>
+
+          <div class="mb-3">
+            <label for="nama" class="block text-sm font-medium text-gray-700">Nama</label>
+            <input type="text" id="nama" name="nama" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="email" name="email" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" />
+          </div>
+
+          <div class="mb-4">
+            <label for="pesan" class="block text-sm font-medium text-gray-700">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" required
+              class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+          </div>
+
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourdomain.com/terima-kasih.html">
+
+          <button type="submit" id="submitButton" target="_blank"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white px-6 py-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Portofolio</h2>
+        <p class="text-gray-400">Siswa di SMKN4 Tangerang yang mengambil Teknik Rekayasa Perangkat Lunak dan Desain
+          Digital.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#home" class="hover:text-white transition">Tentang Saya</a></li>
+          <li><a href="#skills" class="hover:text-white transition">Keahlian</a></li>
+          <li><a href="#project" class="hover:text-white transition">Proyek</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Ikuti Saya</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-white transition" target="_blank" aria-label="instagram"> <i
+              data-lucide="instagram" class="w-5 h-5 text-white"></i></a>
+          <a href="https://github.com/Rafi-mb" target="_blank" class="hover:text-white transition" aria-label="Twitter">
+            <i data-lucide="github" class="w-5 h-5 text-white"></i></a>
+          <a href="https://wa.me/6283829022240" target="_blank" class="hover:text-white transition"
+            aria-label="whatsapp"><img src="icon/icons8-whatsapp-50 (1).png" class="w-5 h-5"></a>
+          <a href="#" class="hover:text-white transition" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+      <div class="mb-2">© 2025 Portfolio. Dibuat dengan Tailwind CSS.</div>
+      <p>
+        Beberapa ikon oleh
+        <a href="https://icons8.com" class="underline hover:text-blue-500" target="_blank"
+          rel="noopener noreferrer">Icons8</a>
+        &
+        <a href="https://lucide.dev" class="underline hover:text-blue-500" target="_blank"
+          rel="noopener noreferrer">Lucide</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

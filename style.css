@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+  .animate-menu {
+    transition: all 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .animate-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 100% 0);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.wow {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typingEraseLoop {
+  0% {
+    width: 0;
+  }
+
+  40% {
+    width: 100%;
+  }
+
+  60% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: rgb(255, 255, 255);
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  max-width: 24ch;
+  border-right: 2px solid rgb(255, 255, 255);
+  animation:
+    typingEraseLoop 8s steps(24) infinite,
+    blink 0.7s step-end infinite;
+}
+
+ .transition-smooth {
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* Modal zoom styles */
+    #zoom-modal {
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+      background-color: rgba(0,0,0,0.7);
+    }
+    #zoom-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .spinner-border {
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            vertical-align: text-bottom;
+            border: 0.2em solid currentColor;
+            border-right-color: transparent;
+            border-radius: 50%;
+            animation: spinner-border .75s linear infinite;
+          }
+
+          @keyframes spinner-border {
+            to {
+              transform: rotate(360deg);
+            }
+          }
